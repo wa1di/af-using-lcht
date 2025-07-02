@@ -1,3 +1,5 @@
+## benchmark/micro/join/hashjoin_dups_rhs.benchmark
+
 This document is about understanding the `benchmark/micro/join/hashjoin_dups_rhs.benchmark` file in the duckdb repository. It looks like the following:
 
 ```text
