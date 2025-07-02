@@ -26,3 +26,5 @@ The code consists of two headers: lines `1-3` and lines `5-6`, where the latter 
 Line `8` declares the start to the SQL statements which generate the tables that the benchmark will be run on, which are locate in lines `9-10`. These create tables `t1` and `t2`. These feature a column named `i`, that looks like "verylargestring0", "verylargestring1", ... "verylargestring 32767", "verylargestring0", ..., where each of the 32768 unique strings repeat 4 times in table t1 and 4096 times in table t2. 
 
 Line `12` finally declares the SQL statement that is run for the benchmark. It joins t1 (=lhs of the join) with t2 (=rhs). The operation count(*) counts the amount of output rows. Since each of the 32,768 distinct keys in t1 (4 copies each) matches 4096 copies in t2, you get 32,768 x 4 x 4096 = 536,870,917 joined rows.
+
+The file is also referred to by `.github/regression/micro_extended.csv`.
