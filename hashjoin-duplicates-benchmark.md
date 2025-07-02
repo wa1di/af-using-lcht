@@ -27,4 +27,4 @@ Line `8` declares the start to the SQL statements which generate the tables that
 
 Line `12` finally declares the SQL statement that is run for the benchmark. It joins t1 (=lhs of the join) with t2 (=rhs). The operation count(*) counts the amount of output rows. Since each of the 32,768 distinct keys in t1 (4 copies each) matches 4096 copies in t2, you get 32,768 x 4 x 4096 = 536,870,917 joined rows.
 
-The file is also referred to by `.github/regression/micro_extended.csv`.
+The file is referred to by `.github/regression/micro_extended.csv`. I'm assuming that's where the benchmark "regression" testing is done".
